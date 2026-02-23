@@ -7,38 +7,139 @@
   <title>Portfólio | André Macedo Taques</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; background: #f5f5f5; color: #333; }
-    header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-    main { padding: 2rem; max-width: 900px; margin: auto; }
-    section { margin-bottom: 3rem; }
-    h1, h2 { margin-bottom: 1rem; }
-    .project iframe { width: 100%; aspect-ratio: 16/9; border: 0; }
-    .tech-icons { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .tech-icons div { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); font-weight: bold; text-align: center; }
-    .tech-icons div img { display: block; margin: auto; margin-bottom: 0.5rem; }
-    footer { text-align: center; font-size: 0.9rem; padding: 1rem; background: #2c3e50; color: white; }
-    a { color: #3498db; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ===== NOVO ESTILO SOBRE MIM ===== */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    
+    section {
+      margin-bottom: 3rem;
+    }
+    
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    
+    .project iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 0;
+    }
+    
+    .tech-icons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .tech-icons div {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .tech-icons div img {
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* ========================= */
+    /* SOBRE MIM */
+    /* ========================= */
+    
     .sobre-container {
       display: flex;
       align-items: center;
       gap: 2rem;
       flex-wrap: wrap;
     }
-
+    
     .sobre-container img {
       width: 220px;
       height: 220px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
-
+    
     .sobre-texto {
       flex: 1;
       min-width: 250px;
+    }
+    
+    /* ========================= */
+    /* CURSO HOTMART */
+    /* ========================= */
+    
+    .curso-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .curso-container img {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    
+    .curso-texto {
+      flex: 1;
+      min-width: 250px;
+    }
+    
+    /* ========================= */
+    /* RESPONSIVO */
+    /* ========================= */
+    
+    @media (max-width: 768px) {
+      .sobre-container,
+      .curso-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .sobre-container img,
+      .curso-container img {
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
