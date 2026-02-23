@@ -19,6 +19,27 @@
     footer { text-align: center; font-size: 0.9rem; padding: 1rem; background: #2c3e50; color: white; }
     a { color: #3498db; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    /* ===== NOVO ESTILO SOBRE MIM ===== */
+    .sobre-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .sobre-container img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .sobre-texto {
+      flex: 1;
+      min-width: 250px;
+    }
   </style>
 </head>
 <body>
@@ -30,7 +51,7 @@
     <a href="https://github.com/dedecobb" target="_blank" style="color: #ecf0f1">GitHub</a> |
     <a href="https://www.linkedin.com/in/andré-macedo-taques-06a526182/" target="_blank" style="color: #ecf0f1">LinkedIn</a> |
     <span style="color: #ecf0f1; display: inline-flex; align-items: center; gap: 6px;">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16" height="16" style="vertical-align: middle;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16" height="16">
       @andretaques_
     </span>
   </p>
@@ -66,15 +87,9 @@
       <p>Chatbots personalizados com envio de documentos, áudios, vídeos e respostas inteligentes. Ideal para atendimento automático e suporte.</p>
     </div>
 
-    <!-- Novo Projeto 5 -->
     <div class="project">
       <h3>5. App para Instaladores de Manutenção Residencial</h3>
-      
-      <iframe 
-        src="https://www.youtube.com/embed/gWPU7nS6lP0" 
-        allowfullscreen>
-      </iframe>
-      
+      <iframe src="https://www.youtube.com/embed/gWPU7nS6lP0" allowfullscreen></iframe>
       <p>
         Aplicativo móvel desenvolvido para profissionais de manutenção residencial 
         (ar-condicionado, máquina de lavar, geladeira, elétrica, hidráulica e outros serviços). 
@@ -84,49 +99,87 @@
     </div>
   </section>
 
-  </section> <!-- Fim Projetos -->
+  <!-- Curso -->
+<!-- Curso em Destaque -->
+<section>
+  <h2>📚 Curso em Destaque</h2>
 
-  <!-- Curso em Destaque -->
-  <section>
-    <h2>📚 Curso em Destaque</h2>
-    <div class="project">
+  <div class="curso-container">
+
+    <img src="curso-hotmart.jpg" alt="Curso Automação em Python para Escritório">
+
+    <div class="curso-texto">
       <h3>Automação em Python para Escritório</h3>
-      <p><strong>Duração:</strong> Mais de 2 horas e meia de aulas práticas</p>
-      <p>Aprenda a automatizar tarefas do dia a dia do escritório mesmo sem experiência prévia em programação. Você vai aprender a:</p>
-      <ul>
-        <li>Preencher formulários automaticamente</li>
-        <li>Controlar mouse e teclado</li>
-        <li>Automatizar sistemas sem API</li>
-        <li>Criar interfaces gráficas simples</li>
-        <li>Enviar e agendar e-mails</li>
-        <li>Manipular arquivos e relatórios</li>
-        <li>Resolver erros comuns em automações</li>
-      </ul>
-      <p><a href="https://go.hotmart.com/U103712928W?dp=1" target="_blank" style="color: #3498db; font-weight: bold;">📌 Acesse o curso na Hotmart</a></p>
-    </div>
-  </section>
 
-  
+      <p><strong>Duração:</strong> Mais de 2 horas e meia de aulas práticas</p>
+
+      <p>
+        Curso prático e direto ao ponto para quem deseja automatizar tarefas repetitivas
+        no ambiente de trabalho, mesmo sem experiência prévia em programação.
+      </p>
+
+      <ul>
+        <li>Automação de sistemas sem API</li>
+        <li>Controle de mouse e teclado</li>
+        <li>Criação de interfaces gráficas</li>
+        <li>Envio automático de e-mails</li>
+        <li>Manipulação de arquivos e relatórios</li>
+      </ul>
+
+      <p>
+        <a href="https://go.hotmart.com/U103712928W?dp=1" target="_blank" style="color: #3498db; font-weight: bold;">
+          🚀 Acessar Curso na Hotmart
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
   <!-- Tech Stack -->
   <section>
     <h2>✅ Tech Stack</h2>
-  <div class="tech-icons">
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50"><p>Python</p></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50"><p>Node.js</p></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="50"><p>PostgreSQL</p></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="50"><p>Docker</p></div>
-    <div><img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" width="50"><p>Excel</p></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" width="50"><p>React Native</p></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" width="50"><p>Supabase</p></div>
-    <div><img src="make-color.png" alt="Make" width="50"><p>Make</p></div>
-  </div>
+    <div class="tech-icons">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"><p>Python</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50"><p>Node.js</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50"><p>PostgreSQL</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50"><p>Docker</p></div>
+      <div><img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" width="50"><p>Excel</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50"><p>React Native</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="50"><p>Supabase</p></div>
+      <div><img src="make-color.png" width="50"><p>Make</p></div>
+    </div>
   </section>
 
   <!-- Sobre Mim -->
   <section>
     <h2>✅ Sobre Mim</h2>
-    <p>Sou André Macedo Taques, formado em Ciência da Computação e apaixonado por criar soluções que economizam tempo e aumentam a produtividade. Meu foco é desenvolver automações práticas, principalmente voltadas para controle de estoque, onde já entreguei planilhas inteligentes e sistemas automatizados que realmente ajudam empresas no dia a dia. Trabalho com ferramentas como Python, Excel avançado, Node.js e outras tecnologias que me permitem transformar tarefas repetitivas em processos rápidos e eficientes. Já automatizei desde pequenas rotinas até fluxos complexos e ambientes de negócio. Atualmente, estudo Inteligência Artificial e integração com APIs, buscando sempre novas formas de entregar valor com tecnologia. No tempo livre, gosto ouvir uma boa música, explorar a natureza da Chapada dos Guimarães, e passar bons momentos com minha noiva. Acredito que tecnologia boa é aquela que resolve de verdade — e é isso que eu busco entregar em cada projeto.</p>
-    <p><a href="curriculo-andre-taques.pdf" download>📄 Baixar CV em PDF</a></p>
+
+    <div class="sobre-container">
+
+      <img src="minhafoto.jpeg" alt="Foto de André Macedo Taques">
+
+      <div class="sobre-texto">
+      <p>
+      Sou André Macedo Taques, desenvolvedor especializado em automação de processos e criação de soluções inteligentes para empresas que querem ganhar tempo e produtividade. Transformo tarefas repetitivas em sistemas eficientes, integrando Python, Excel avançado, APIs e bots personalizados para otimizar rotinas operacionais e reduzir erros manuais.
+      </p>
+      
+      <p>
+      Tenho experiência no desenvolvimento de planilhas inteligentes, automações para sistemas sem API, integração com WhatsApp, emissão automatizada de relatórios e criação de interfaces que facilitam o dia a dia das equipes. Meu foco é entregar soluções práticas, aplicáveis e que gerem resultado real no negócio.
+      </p>
+      
+      <p>
+      Atualmente, aprofundo meus estudos em Inteligência Artificial e integrações avançadas, buscando sempre evoluir tecnicamente para oferecer soluções cada vez mais estratégicas e escaláveis.
+      </p>
+      
+      <p>
+      Acredito que tecnologia de verdade é aquela que resolve problemas concretos — e é exatamente isso que eu entrego em cada projeto.
+      </p>
+        <p><a href="curriculo-andre-taques.pdf" download>📄 Baixar CV em PDF</a></p>
+      </div>
+
+    </div>
   </section>
 
 </main>
